@@ -73,8 +73,8 @@ def _try_concat(o):
     except: return sum([L(o_[i,:] for i in range_of(o_)) for o_ in o], L())
 
 # %% ../nbs/13a_learner.ipynb #986f89f1
-_before_epoch = [event.before_fit, event.before_epoch]
-_after_epoch  = [event.after_epoch, event.after_fit]
+_before_epoch = [event.before_epoch]
+_after_epoch  = [event.after_epoch]
 
 # %% ../nbs/13a_learner.ipynb #985a1076
 class _ConstantFunc():
